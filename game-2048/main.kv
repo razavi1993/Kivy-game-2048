@@ -1,0 +1,227 @@
+<MyLayout>:
+	orientation: "vertical"
+
+	Label: 
+		text: "Score"
+		font_size: 24
+		color: 0,0,0,1
+		size_hint: 0.2,0.075
+		pos_hint: {'center_x': 0.25, 'center_y': 0.94}
+
+	Label:
+		text: "0"
+		font_size: 24
+		color: 0,0,0,1
+		size_hint: 0.2,0.075
+		pos_hint: {'center_x': 0.25, 'center_y': 0.86}
+		id: score
+
+	Button:
+		text: "Start"
+		font_size: 24
+		color: 0,0,0,1
+		size_hint: 0.2,0.075
+		pos_hint: {'center_x': 0.5, 'center_y': 0.86}
+		id: start
+		on_press: root.start_button_pressed()
+
+	Label:
+		text: ""
+		font_size: 24
+		color: 0,0,0,1
+		size_hint: 0.2,0.075
+		pos_hint: {'center_x': 0.5, 'center_y': 0.94}
+		id: endgame
+
+	Button: 
+		text: "Up"
+		font_size: 20
+		color: 0,0,0,1
+		size_hint: 0.1, 0.06
+		pos_hint: {'center_x': 0.75, 'center_y': 0.94}
+		id: up
+		on_press: root.up_button_pressed()
+
+	Button: 
+		text: "Left"
+		font_size: 20
+		color: 0,0,0,1
+		size_hint: 0.1, 0.06
+		pos_hint: {'center_x': 0.70, 'center_y': 0.88}
+		id: left
+		on_press: root.left_button_pressed()
+
+	Button: 
+		text: "Right"
+		font_size: 20
+		color: 0,0,0,1
+		size_hint: 0.1, 0.06
+		pos_hint: {'center_x': 0.80, 'center_y': 0.88}
+		id: right
+		on_press: root.right_button_pressed()
+
+	Button: 
+		text: "Down"
+		font_size: 20
+		color: 0,0,0,1
+		size_hint: 0.1, 0.06
+		pos_hint: {'center_x': 0.75, 'center_y': 0.82}
+		id: down
+		on_press: root.down_button_pressed()
+
+	FloatLayout:
+		orientation: "vertical"
+
+		Button: 
+			text: ""
+			font_size: 44
+			background_color: 0.9,0.6,0.3,0.75
+			color: 1,1,1,1
+			size_hint: 0.18,0.14
+			pos_hint: {'center_x': 0.215, 'center_y': 0.62}
+			id: button00
+
+		Button: 
+			text: ""
+			font_size: 44
+			background_color: 0.9,0.6,0.3,0.75
+			color: 1,1,1,1
+			size_hint: 0.18,0.14
+			pos_hint: {'center_x': 0.405, 'center_y': 0.62}
+			id: button01
+
+		Button: 
+			text: ""
+			font_size: 44
+			background_color: 0.9,0.6,0.3,0.75
+			color: 1,1,1,1
+			size_hint: 0.18,0.14
+			pos_hint: {'center_x': 0.595, 'center_y': 0.62}
+			id: button02
+
+		Button: 
+			text: ""
+			font_size: 44
+			background_color: 0.9,0.6,0.3,0.75
+			color: 1,1,1,1
+			size_hint: 0.18,0.14
+			pos_hint: {'center_x': 0.785, 'center_y': 0.62}
+			id: button03
+
+		Button: 
+			text: ""
+			font_size: 44
+			background_color: 0.9,0.6,0.3,0.75
+			color: 1,1,1,1
+			size_hint: 0.18,0.14
+			pos_hint: {'center_x': 0.215, 'center_y': 0.47}
+			id: button10
+
+		Button: 
+			text: ""
+			font_size: 44
+			background_color: 0.9,0.6,0.3,0.75
+			color: 1,1,1,1
+			size_hint: 0.18,0.14
+			pos_hint: {'center_x': 0.405, 'center_y': 0.47}
+			id: button11
+
+		Button: 
+			text: ""
+			font_size: 44
+			background_color: 0.9,0.6,0.3,0.75
+			color: 1,1,1,1
+			size_hint: 0.18,0.14
+			pos_hint: {'center_x': 0.595, 'center_y': 0.47}
+			id: button12
+
+		Button: 
+			text: ""
+			font_size: 44
+			background_color: 0.9,0.6,0.3,0.75
+			color: 1,1,1,1
+			size_hint: 0.18,0.14
+			pos_hint: {'center_x': 0.785, 'center_y': 0.47}
+			id: button13
+
+		Button: 
+			text: ""
+			font_size: 44
+			background_color: 0.9,0.6,0.3,0.75
+			color: 1,1,1,1
+			size_hint: 0.18,0.14
+			pos_hint: {'center_x': 0.215, 'center_y': 0.32}
+			id: button20
+
+		Button: 
+			text: ""
+			font_size: 44
+			background_color: 0.9,0.6,0.3,0.75
+			color: 1,1,1,1
+			size_hint: 0.18,0.14
+			pos_hint: {'center_x': 0.405, 'center_y': 0.32}
+			id: button21
+
+		Button: 
+			text: ""
+			font_size: 44
+			background_color: 0.9,0.6,0.3,0.75
+			color: 1,1,1,1
+			size_hint: 0.18,0.14
+			pos_hint: {'center_x': 0.595, 'center_y': 0.32}
+			id: button22
+
+		Button: 
+			text: ""
+			font_size: 44
+			background_color: 0.9,0.6,0.3,0.75
+			color: 1,1,1,1
+			size_hint: 0.18,0.14
+			pos_hint: {'center_x': 0.785, 'center_y': 0.32}
+			id: button23
+
+		Button: 
+			text: ""
+			font_size: 44
+			background_color: 0.9,0.6,0.3,0.75
+			color: 1,1,1,1
+			size_hint: 0.18,0.14
+			pos_hint: {'center_x': 0.215, 'center_y': 0.17}
+			id: button30
+
+		Button: 
+			text: ""
+			font_size: 44
+			background_color: 0.9,0.6,0.3,0.75
+			color: 1,1,1,1
+			size_hint: 0.18,0.14
+			pos_hint: {'center_x': 0.405, 'center_y': 0.17}
+			id: button31
+
+		Button: 
+			text: ""
+			font_size: 44
+			background_color: 0.9,0.6,0.3,0.75
+			color: 1,1,1,1
+			size_hint: 0.18,0.14
+			pos_hint: {'center_x': 0.595, 'center_y': 0.17}
+			id: button32
+
+		Button: 
+			text: ""
+			font_size: 44
+			background_color: 0.9,0.6,0.3,0.75
+			color: 1,1,1,1
+			size_hint: 0.18,0.14
+			pos_hint: {'center_x': 0.785, 'center_y': 0.17}
+			id: button33
+
+
+
+
+
+
+		
+
+
+
